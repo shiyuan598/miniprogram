@@ -1,6 +1,6 @@
 // index.js
 Page({
-  data: { msg: "" },
+  data: { msg: "", image: "" },
   getPhoneNumber(e) {
     console.log(e.detail.code);
   },
@@ -40,14 +40,22 @@ Page({
     this.setData({
       msg: "Hello World"
     });
-    wx.scanCode({
+    // wx.scanCode({
+    //   success: (res) => {
+    //     console.log(`扫描到二维码：${res}`);
+    //     this.setData({
+    //       msg: JSON.stringify(res)
+    //     });
+    //   }
+    // })
+    wx.chooseMedia({
+      count: 1,
+      mediaType: ['image'],
+      sourceType: ["album", "camera"],
       success: (res) => {
-        console.log(`扫描到二维码：${res}`);
-        this.setData({
-          msg: JSON.stringify(res)
-        });
+        console.log(res.tempFiles);
+        this.setData({image: res.tempFiles[0].tempFilePath})
       }
     })
-    wx.createCameraContext()
   }
 })

@@ -5,6 +5,7 @@
     Msg: {{msg}}
     <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">验证</button>
     <button bindtap="login">登录</button>
-    <button bindtap="photo">拍照</button>
+    <button class="weui-btn weui-btn_primary" bindtap="photo">拍照</button>
+    <image src="{{image}}"></image>
   </view>
 </scroll-view>
