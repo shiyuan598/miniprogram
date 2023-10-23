@@ -4,6 +4,13 @@ Page({
     //   url: '../index/index',
     // })
     wx.navigateBack();
+    const appBaseInfo = wx.getAppBaseInfo();
+    console.log(appBaseInfo.SDKVersion)
+    console.log(appBaseInfo.enableDebug)
+    console.log(appBaseInfo.host)
+    console.log(appBaseInfo.language)
+    console.log(appBaseInfo.version)
+    console.log(appBaseInfo.theme)
   },
   fetchData() {
     wx.request({
