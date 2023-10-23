@@ -1,7 +1,10 @@
 <!--index.wxml-->
-<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<navigation-bar title="Weixin" back="{{true}}" color="black" background="#FFF"></navigation-bar>
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
-    Weixin
+    Msg: {{msg}}
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">验证</button>
+    <button bindtap="login">登录</button>
+    <button bindtap="photo">拍照</button>
   </view>
 </scroll-view>

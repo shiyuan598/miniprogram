@@ -1,7 +1,29 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/detail/detail"
   ],
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#87ceeb",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./assets/home.png",
+      "selectedIconPath": "./assets/home-active.png"
+    }, {
+      "pagePath": "pages/detail/detail",
+      "text": "详情",
+      "iconPath": "./assets/detail.png",
+      "selectedIconPath": "./assets/detail-active.png"
+    }, {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "./assets/mine.png",
+      "selectedIconPath": "./assets/mine-active.png"
+    }]
+  },
   "window": {
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
@@ -19,4 +41,5 @@
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"
+ 
 }

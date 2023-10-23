@@ -1,0 +1,6 @@
+<navigation-bar title="Weixin" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view>
+    <text>个人中心</text>
+  </view>
+</scroll-view>
