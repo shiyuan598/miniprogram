@@ -28,6 +28,9 @@
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
   },
+  "useExtendedLib": {
+    "weui": true
+  },
   "style": "v2",
   "renderer": "webview",
   "sitemapLocation": "sitemap.json",

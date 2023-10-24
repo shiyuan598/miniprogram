@@ -1,9 +1,12 @@
 <navigation-bar title="Weixin" back="{{true}}" color="black" background="#FFF"></navigation-bar>
 <scroll-view class="scrollarea" scroll-y type="list">
-  <view>
-    <text>订单详情</text>
-  </view>
-  <navigator url="../index/index">回到首页</navigator>
-  <button bind:tap="navigateTo">前往首页</button>
-  <button bind:tap="fetchData">请求数据</button>
+    <view>
+        <text>订单详情</text>
+    </view>
+    <navigator url="../index/index">回到首页</navigator>
+    <button bind:tap="navigateTo">前往首页</button>
+    <button bind:tap="fetchData">请求数据</button>
+    <mp-dialog title="test" show="{{show}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+        <view>test content</view>
+    </mp-dialog>
 </scroll-view>
