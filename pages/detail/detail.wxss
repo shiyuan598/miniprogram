@@ -8,3 +8,7 @@ page {
   flex: 1;
   overflow-y: hidden;
 }
+.map {
+  width: 100vw;
+  height: 60vh;
+}

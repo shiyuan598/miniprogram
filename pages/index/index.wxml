@@ -4,6 +4,11 @@
   <view class="container">
     Msg: {{msg}}
     <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">验证</button>
+    <input type="text" placeholder="请输入文字" focus="true"></input>
+    <input type="digit" placeholder="请输入数字" focus="true"></input>
+    <input type="number" placeholder="请输入number" focus="true"></input>
+    <input type="safe-password" placeholder="请输入safe-password" focus="true"></input>
+    <input type="idcard" placeholder="请输入idcard" focus="true"></input>
     <button bindtap="login">登录</button>
     <button class="weui-btn weui-btn_primary" bindtap="photo">拍照</button>
     <image src="{{image}}"></image>
